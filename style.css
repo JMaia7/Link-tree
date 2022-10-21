@@ -1,0 +1,136 @@
+/* Declarei a fonte que quero usar */
+@font-face {
+    font-family: 'Fontezinha';
+    src: url(astron/Astron-Bold.otf) format('opentype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    font-family: 'Fontezinha';
+    text-align: center;
+    color: rgb(50, 84, 113);
+    text-shadow: #bdbdbd;
+    font-size: 40px;
+}
+
+img
+{   
+    margin: 2vh;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#all
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    height: 87vh;
+    padding-top:13vh;
+
+
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #e5e5f7 25%);
+    background-position:  39px 0, 39px 0, 0 0, 0 0;
+    background-size: 78px 78px;
+    background-repeat: repeat;
+}
+
+#links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 30vh;
+}   
+
+
+.buttons 
+{
+	border-radius:42px;
+	border:2px solid #bdbdbd;
+
+	display:inline-block;
+	cursor:pointer;
+
+	color:#ffffff;
+    font-family: 'Courier New', Courier, monospace;
+
+	font-size:20px;
+    width: 200px;
+    height: 20px;
+    padding: 5%;
+    margin-top: 20px;
+    text-align: center;
+	text-decoration:none;
+
+}
+
+#insta
+{
+    background: linear-gradient(230deg, rgba(205,0,255,1) 0%, rgba(255,123,0,1) 61%, rgba(255,247,0,1) 100%);
+}
+
+#git
+{
+    background-color: rgb(35, 35, 35);
+}
+
+#twitter
+{
+    background-color:#1fcbff;
+}
+
+.buttons:hover 
+{
+	background-color:#0091ff;
+}
+
+
+a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(134, 198, 255);
+}
+
+@media screen and (min-width:300px) and (max-width:700px)
+{
+    h2
+    {
+        font-size: 35px;
+    }
+    
+    img
+    {   
+        margin: 2vh;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .buttons
+    {
+        font-size:20px;
+        width: 200px;
+        height: 20px;
+        padding: 5%;
+        margin-top: 30px;
+        text-align: center;
+        text-decoration:none;
+    }
+    
+}
